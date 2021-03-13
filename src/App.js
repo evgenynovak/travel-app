@@ -1,50 +1,31 @@
-import React from 'react';
 import './App.scss';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import travelData from './travelData.js'; // данные для теста
-import {
-  BrowserRouter as Router,
-  Redirect,
-  Route,
-  Switch,
-} from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
+import {BrowserRouter as Router,
+        Switch,
+        Route,
+        Link} from 'react-router-dom';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import Main from './Components/Main';
+import Details from './Components/Details';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-        {/* 
-          Компонент СountryList map-ит
-            Компонент СountryCard
-
-          СountryCard при клике на него переход на большую страницу страны, компонент Сountry
-        */}
-
-      <Footer />
-    </div>
-  );
-}
-
-function LocalizeApp() {
+export default function App() {
+  const [language, setLanguage] = useState('ru');
   return (
     <Router>
-      <Switch>
-        <Route path="/ru">
-          <App lang="ru" />
-        </Route>
-        <Route path="/en">
-          <App lang="en" />
-        </Route>
-        <Route path="/de">
-          <App lang="de" />
-        </Route>
-        <Redirect from="/" to="/ru" />
-      </Switch>
+        <div className="App">
+          <Header switchLang={setLanguage} main={true} />
+          <Footer />
+          <Switch>
+            <Route path="/details">
+              <Details />
+            </Route>
+            <Route path="/">
+              <Main />
+            </Route>
+          </Switch>  
+        </div>
     </Router>
   );
 }
-
-
-export default LocalizeApp;
 
