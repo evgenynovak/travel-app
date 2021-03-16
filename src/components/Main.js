@@ -1,31 +1,37 @@
 import React, {useEffect} from 'react';
+import countries from './countries';
+import {Link} from 'react-router-dom';
+import './Main.scss'
 
-export default function Main(){
-    function moveTo(country){
+export default function Main(props){
 
-    };
     // useEffect(() => {
     //     document.querySelector('.gallery').addEventListener('click', (event)=>{
-    //         moveTo(event.target.id);
+            
+    //         console.log(event.target.closest('div').id)
+    //       //  moveTo(event.target.id);
     //     });
     //     return ()=>{
     //         document.querySelector('.gallery').removeEventListener('click', (event)=>{
-    //             moveTo(event.target.id);
+    //            // moveTo(event.target.id);
     //         })
     //     }
     // })
-    const pictures = "object of country's pictures";
     return(
         <div className='main'>
             <div className='content'>
                 <div className='gallery'>
-                    {/* {pictures.map((img) => {
+                    { countries.map((country, index) => {
                         return (
-                            <div key={img.country} id={img.country}>
-                                <img src={img.src} alt={img.country} />
+                            <Link key={index} to={`/details/:${country.id}`}>
+                            <div id={country.id} className="gallery__card card">
+                                <img src={country.prev} alt={country.name} className="card__image" />
+                                <h4 className="card__title">{country.name}</h4>
+                                <p className="card__info">{country.capital}</p>
                             </div>
+                            </Link>
                         )
-                    })} */}
+                    }) }
                 </div>
             </div>
         </div>

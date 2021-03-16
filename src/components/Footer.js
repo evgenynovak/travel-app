@@ -1,5 +1,6 @@
 import React from 'react';
-import rslogo from '../assets/images/rs_school_js.svg'
+import rslogo from '../assets/images/rs_school_js.svg';
+import "./footer.scss"
 
 export default function Footer(){
     return(
@@ -16,7 +17,7 @@ export default function Footer(){
                     </li>
                 </ul>
                 <p>2021</p>
-                <div className='logo' style={{width:'100px',height:'100px'}}>
+                <div className='logo' >
                     <a href='https://rs.school/js/'>
                         <img src={rslogo} alt='RSSchool logo' />
                     </a>

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link, Route, Switch} from 'react-router-dom';
-import './headerStyle.css'
+import './header.scss'
 
 function SearchField(props){
     if(props.main) return (
@@ -16,12 +16,12 @@ export default function Header(props){
     return (
         <header>
             <div className='content' id='head'>
-                <Link to="/">Main page</Link>
+                <Link to="/">Главная</Link>
                 <SearchField main={props.main} />
-                <div className="lang">Language:
-                <select name='language'>
-                <option value='ru' selected>Русский</option>
-                <option value='en' selected>English</option>
+                <div className="lang">Язык:
+                <select name='language' defaultValue='ru'>
+                <option value='ru' >Русский</option>
+                <option value='en' >English</option>
                 </select>
                 </div>
             </div>    

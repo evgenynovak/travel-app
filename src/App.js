@@ -8,6 +8,7 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Main from './Components/Main';
 import Details from './Components/Details';
+var id;
 
 export default function App() {
   const [language, setLanguage] = useState('ru');
@@ -15,15 +16,11 @@ export default function App() {
     <Router>
         <div className="App">
           <Header switchLang={setLanguage} main={true} />
-          <Footer />
           <Switch>
-            <Route path="/details">
-              <Details />
-            </Route>
-            <Route path="/">
-              <Main />
-            </Route>
-          </Switch>  
+            <Route path='/details/:id' component={Details} />
+            <Route exact path="/" component={Main} />
+          </Switch>
+          <Footer />
         </div>
     </Router>
   );
