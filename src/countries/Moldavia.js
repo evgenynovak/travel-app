@@ -9,6 +9,7 @@ import main from '../assets/image/Moldavia/Moldavia0.jpg';
 const Moldavia = {
     name : 'Молдавия',
     capital : "Кишинёв",
+    capitalEng : 'Chisinau',
     prev : main,
     id : 'MD',
     info : 'Государство в Юго-Восточной Европе. Площадь территории — 33 846 км², однако де-факто около 12,3 % территории не контролируется молдавскими властями.',

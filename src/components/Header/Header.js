@@ -7,6 +7,7 @@ function SearchField(props){
         <div className='search'>
             <form>
                 <input type='text' placeholder='Search'></input>
+                <input type='submit'></input>
             </form>
         </div>
     )

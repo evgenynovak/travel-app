@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Details.scss';
 import countries from './countries';
 import ImageGallery from 'react-image-gallery';
+
 
 export default function Details(props){
     const id = props.match.params.id.slice(1,3);
@@ -17,7 +18,6 @@ export default function Details(props){
             description  : `${sight.place}. ${sight.description}`
         });
     })
-
     return(
         <div className='details'>
             <div className='content'>
@@ -25,11 +25,9 @@ export default function Details(props){
                     <h2 className="country__name">{country.name}</h2>
                     <section class="country__info">{country.info}</section>
                     <ImageGallery items={images} showThumbnails={false} showBullets={true} />
+                    <aside>
+                    </aside>
                 </article>
-                
-                <aside>
-                    
-                </aside>
             </div>
         </div>
     )

@@ -9,6 +9,7 @@ import main from '../assets/image/Russia/Russia0.jpg';
 const Russia = {
     name : 'Россия',
     capital : "Москва",
+    capitalEng : 'Moscow',
     prev : main,
     id : 'RU',
     info : 'Государство в Восточной Европе и Северной Азии. Занимает первое место в мире по территории, и девятое - по численности населения',
