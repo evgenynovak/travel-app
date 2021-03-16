@@ -9,6 +9,16 @@ let travelData = [
     video: 'usaVideo',
     map:'usaMap', 
   },
+  {
+    id: 2,
+    name: 'Russia',
+    capital: 'Moscow',
+    photo: 'russiaPhoto',
+    info: 'russiaInfo',
+    photoGallery: 'russiaGallery',
+    video: 'russiaVideo',
+    map:'russiaMap', 
+  },
 ]
 
 export default travelData;

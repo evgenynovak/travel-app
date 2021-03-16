@@ -2,6 +2,8 @@ import React from 'react';
 import './App.scss';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import CountryList from './components/СountryList/СountryList';
+import Country from './components/Country/Country'
 import travelData from './travelData.js'; // данные для теста
 import {
   BrowserRouter as Router,
@@ -10,10 +12,24 @@ import {
   Switch,
 } from 'react-router-dom';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <Header />
+        {props.lang}
+        {travelData[1].id}
+
+        <Router>
+          <Route path={`/${props.lang}`}
+          render={props => <CountryList data={travelData} {...props}/>}
+          />
+          <Route path={`/${props.lang}/:id`}
+          render={props => <Country data={travelData} {...props}/>}
+          />
+        </Router>
+
+
+
         {/* 
           Компонент СountryList map-ит
             Компонент СountryCard
