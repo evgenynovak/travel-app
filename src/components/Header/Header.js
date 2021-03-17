@@ -37,9 +37,9 @@ export default function Header(props){
     return (
         <header>
             <div className='content' id='head'>
-                <Link to={`/${location[1]}`}>Главная</Link>
+                <Link to={`/${location[1]}`}>{menu[`main${lang}`]}</Link>
                 <SearchField length={location.length} />
-                <div className="lang">Язык:
+                <div className="lang">{menu[`lang${lang}`]}: 
                 <select name='language' defaultValue='ru' onChange={event => handleChange(event.target.value)}>
                 <option value='ru' >Русский</option>
                 <option value='en' >English</option>
