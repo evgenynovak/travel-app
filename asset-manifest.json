@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/travel-app/static/css/main.07b08682.chunk.css",
-    "main.js": "/travel-app/static/js/main.cfa21d5d.chunk.js",
-    "main.js.map": "/travel-app/static/js/main.cfa21d5d.chunk.js.map",
+    "main.js": "/travel-app/static/js/main.fe0baeb1.chunk.js",
+    "main.js.map": "/travel-app/static/js/main.fe0baeb1.chunk.js.map",
     "runtime-main.js": "/travel-app/static/js/runtime-main.50df4648.js",
     "runtime-main.js.map": "/travel-app/static/js/runtime-main.50df4648.js.map",
     "static/js/2.1752dcec.chunk.js": "/travel-app/static/js/2.1752dcec.chunk.js",
@@ -72,6 +72,6 @@
     "static/js/runtime-main.50df4648.js",
     "static/js/2.1752dcec.chunk.js",
     "static/css/main.07b08682.chunk.css",
-    "static/js/main.cfa21d5d.chunk.js"
+    "static/js/main.fe0baeb1.chunk.js"
   ]
 }
