@@ -17,8 +17,8 @@ export default function Details(props){
     country.sights.forEach(sight => {
         images.push({
             original : sight.image,
-            originalTitle : sight.place,
-            description  : `${sight.place}. ${sight.description}`
+            originalTitle : sight[`place${lang}`],
+            description  : `${sight[`place${lang}`]}. ${sight[`description${lang}`]}`
         });
     })
     useEffect(async()=>{
