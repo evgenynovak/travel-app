@@ -11,6 +11,7 @@ const Polsha = {
     capital : 'Варшава',
     capitalEng : 'Warsaw',
     prev : main,
+    preview : "https://www.youtube.com/embed/mSNqPwd38zY",
     id : 'PL',
     info : "Страна в Восточной Европе на берегу Балтийского моря, известная своей средневековой архитектурой и еврейскими кварталами.",
     sights : [{

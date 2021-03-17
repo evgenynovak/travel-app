@@ -11,6 +11,7 @@ const Russia = {
     capital : "Москва",
     capitalEng : 'Moscow',
     prev : main,
+    preview : "https://www.youtube.com/embed/WcQ96O5FV1k",
     id : 'RU',
     info : 'Государство в Восточной Европе и Северной Азии. Занимает первое место в мире по территории, и девятое - по численности населения',
     sights : [{

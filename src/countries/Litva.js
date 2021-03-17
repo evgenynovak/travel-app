@@ -11,6 +11,7 @@ const Litva = {
     capital : 'Вильнюс',
     capitalEng : 'Vilnius',
     prev : main,
+    preview : "https://www.youtube.com/embed/0-s5hp6aMQk",
     id : 'LT',
     info : "Государство  расположенное в северной части Европы. Имеет выход к Балтийскому морю, расположена на его восточном побережье.",
     sights : [{

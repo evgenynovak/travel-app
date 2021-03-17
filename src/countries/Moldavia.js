@@ -11,6 +11,7 @@ const Moldavia = {
     capital : "Кишинёв",
     capitalEng : 'Chisinau',
     prev : main,
+    preview : "https://www.youtube.com/embed/wzPjHMBL9n8",
     id : 'MD',
     info : 'Государство в Юго-Восточной Европе. Площадь территории — 33 846 км², однако де-факто около 12,3 % территории не контролируется молдавскими властями.',
     sights : [{

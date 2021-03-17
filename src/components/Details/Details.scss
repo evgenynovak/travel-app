@@ -1,4 +1,6 @@
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+
 .content{
     width: 1200px;
     display: flex;
@@ -13,7 +15,7 @@
     text-align: center;
 }
 .country__info{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-align: center;
 }
 .country__media{
@@ -25,10 +27,15 @@ justify-content: center;
     width: 600px;
     height: 450px;
     margin: 0 auto;
+    margin-bottom: 30px;
+}
+.video{
+    margin: 0 auto;
 }
 .capital{
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
     .capital__name{
         margin: 0 auto;
     }

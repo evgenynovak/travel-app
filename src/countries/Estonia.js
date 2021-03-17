@@ -12,6 +12,7 @@ const Estonia = {
     capital : 'Таллин',
     capitalEng : 'Tallinn',
     prev : main,
+    preview : "https://www.youtube.com/embed/bXGPk2MLU7Q",
     id : 'EE',
     info : "Государство, расположенное в Северной Европе на восточном побережье Балтийского моря, омываемое водами Финского и Рижского заливов.",
     sights : [{
