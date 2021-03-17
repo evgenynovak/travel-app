@@ -32,8 +32,8 @@ export default function Details(props){
         <div className='details'>
             <div className='content'>
                 <article className="country">
-                    <h2 className="country__name">{country.name}</h2>
-                    <section className="country__info">{country.info}</section>
+                    <h2 className="country__name">{country[`name${lang}`]}</h2>
+                    <section className="country__info">{country[`info${lang}`]}</section>
                     <div className='country__media'>
                         <div className='attraction'>
                             <ImageGallery items={images} showThumbnails={false} showBullets={true} />
