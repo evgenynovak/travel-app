@@ -27,7 +27,7 @@ export default function Main(props){
                             <Link key={index} to={`/${lang}/details/:${country.id}`}>
                             <div id={country.id} className="gallery__card card">
                                 <img src={country.prev} alt={country.name} className="card__image" />
-                                <h4 className="card__title">{country.name}</h4>
+                                <h4 className="card__title">{country[`name${lang}`]}</h4>
                                 <p className="card__info">{country[`capital${lang}`]}</p>
                             </div>
                             </Link>

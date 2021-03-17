@@ -20,9 +20,18 @@ function SearchField(props){
 export default function Header(props){
     let history = useHistory();
     let location = useLocation().pathname.split('/');
+    const lang = location[1];
     function handleChange(value) {
         location[1] = value;
       history.push(location.join('/'));
+    }
+    const menu = {
+        mainru : 'Главная',
+        mainen : 'Main',
+        mainde : 'Main',
+        langru : 'Язык',
+        langen : 'Language',
+        langde : 'Sprache',
     }
 
     return (
@@ -34,6 +43,7 @@ export default function Header(props){
                 <select name='language' defaultValue='ru' onChange={event => handleChange(event.target.value)}>
                 <option value='ru' >Русский</option>
                 <option value='en' >English</option>
+                <option value='de' >Deutsche</option>
                 </select>
                 </div>
             </div>    
