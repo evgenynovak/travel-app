@@ -8,8 +8,8 @@ import main from '../assets/image/Litva/Litva0.jpg';
 
 const Litva = {
     name : 'Литва',
-    capital : 'Вильнюс',
-    capitalEng : 'Vilnius',
+    capitalru : 'Вильнюс',
+    capitalen : 'Vilnius',
     prev : main,
     preview : "https://www.youtube.com/embed/0-s5hp6aMQk",
     id : 'LT',

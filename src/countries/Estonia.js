@@ -9,8 +9,8 @@ import main from '../assets/image/Estonia/Estonia0.jpg';
 
 const Estonia = {
     name : 'Эстония',
-    capital : 'Таллин',
-    capitalEng : 'Tallinn',
+    capitalru : 'Таллин',
+    capitalen : 'Tallinn',
     prev : main,
     preview : "https://www.youtube.com/embed/bXGPk2MLU7Q",
     id : 'EE',

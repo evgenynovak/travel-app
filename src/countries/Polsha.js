@@ -8,8 +8,8 @@ import main from '../assets/image/Polsha/Polsha0.jpg';
 
 const Polsha = {
     name : 'Польша',
-    capital : 'Варшава',
-    capitalEng : 'Warsaw',
+    capitalru : 'Варшава',
+    capitalen : 'Warsaw',
     prev : main,
     preview : "https://www.youtube.com/embed/mSNqPwd38zY",
     id : 'PL',

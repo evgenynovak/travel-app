@@ -8,8 +8,8 @@ import main from '../assets/image/Ukraine/Ukraine0.jpg';
 
 const Ukraine = {
     name : 'Украина',
-    capital : "Киев",
-    capitalEng : 'Kyiv',
+    capitalru : "Киев",
+    capitalen : 'Kyiv',
     id : 'UA',
     prev : main,
     preview : "https://www.youtube.com/embed/l-8vRH0W88g",

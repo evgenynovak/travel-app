@@ -8,8 +8,8 @@ import main from '../assets/image/Moldavia/Moldavia0.jpg';
 
 const Moldavia = {
     name : 'Молдавия',
-    capital : "Кишинёв",
-    capitalEng : 'Chisinau',
+    capitalru : "Кишинёв",
+    capitalen : 'Chisinau',
     prev : main,
     preview : "https://www.youtube.com/embed/wzPjHMBL9n8",
     id : 'MD',

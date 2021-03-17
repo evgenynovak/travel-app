@@ -9,8 +9,8 @@ import main from '../assets/image/Latvia/Latvia0.jpg';
 
 const Latvia = {
     name : 'Латвия',
-    capital : 'Рига',
-    capitalEng : 'Riga',
+    capitalru : 'Рига',
+    capitalen : 'Riga',
     prev : main,
     preview : "https://www.youtube.com/embed/-3OObhE-yaU",
     id : 'LV',

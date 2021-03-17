@@ -8,8 +8,8 @@ import main from '../assets/image/Belarus/Belarus0.jpg';
 
 const Belarus = {
     name : "Беларусь",
-    capital : 'Минск',
-    capitalEng : 'Minsk',
+    capitalru : 'Минск',
+    capitalen : 'Minsk',
     prev : main,
     preview : 'https://www.youtube.com/embed/QNdYybI3Pgs',
     id : 'BY',

@@ -8,8 +8,8 @@ import main from '../assets/image/Russia/Russia0.jpg';
 
 const Russia = {
     name : 'Россия',
-    capital : "Москва",
-    capitalEng : 'Moscow',
+    capitalru : "Москва",
+    capitalen : 'Moscow',
     prev : main,
     preview : "https://www.youtube.com/embed/WcQ96O5FV1k",
     id : 'RU',
