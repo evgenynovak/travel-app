@@ -1,6 +1,6 @@
 import './App.scss';
 import React, {useState} from 'react';
-import {BrowserRouter as Router,
+import {HashRouter,
         Redirect,
         Switch,
         Route
@@ -14,7 +14,7 @@ var id;
 export default function App() {
   const [language, setLanguage] = useState('ru');
   return (
-    <Router basename='travel-app'>
+    <HashRouter basename='travel-app'>
         <div className="App">
           <Header switchLang={setLanguage} main={true} />
           <Switch>
@@ -24,7 +24,7 @@ export default function App() {
           </Switch>
           <Footer />
         </div>
-    </Router>
+    </HashRouter>
   );
 }
 
