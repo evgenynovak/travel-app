@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link, Route, Switch} from 'react-router-dom';
-import './header.scss'
+import './Header.scss'
 
 function SearchField(props){
     if(props.main) return (

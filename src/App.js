@@ -4,10 +4,10 @@ import {BrowserRouter as Router,
         Switch,
         Route,
         Link} from 'react-router-dom';
-import Header from './Components/Header/Header';
-import Footer from './Components/Footer/Footer';
-import Main from './Components/Main';
-import Details from './Components/Details';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Main from './components/Main/Main';
+import Details from './components/Details/Details';
 var id;
 
 export default function App() {

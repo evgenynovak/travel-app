@@ -1,6 +1,6 @@
 import React from 'react';
 import rslogo from '../../assets/image/rs_school_js.svg';
-import "./footer.scss"
+import "./Footer.scss"
 
 export default function Footer(){
     return(
