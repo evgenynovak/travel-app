@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, Route, Switch, useHistory} from 'react-router-dom';
+import {Link, useHistory, useLocation} from 'react-router-dom';
 import './Header.scss'
 
 function SearchField(props){
@@ -15,8 +15,10 @@ function SearchField(props){
 
 export default function Header(props){
     let history = useHistory();
+    let location = useLocation().pathname.split('/');
     function handleChange(value) {
-      history.push(`/${value}/`);
+        location[1] = value;
+      history.push(location.join('/'));
     }
 
     return (

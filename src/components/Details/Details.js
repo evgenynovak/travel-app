@@ -7,7 +7,7 @@ import ImageGallery from 'react-image-gallery';
 
 
 export default function Details(props){
-    const lang = props.match.params.leng;
+    const lang = props.match.params.lang;
     const id = props.match.params.id.slice(1,3);
     const currentCountry = countries.filter((item) => {
         return (item.id === id) ? true : false;
@@ -27,7 +27,7 @@ export default function Details(props){
         const data = await res.json();
         document.querySelector('.weatherInfo').textContent = `${data.weather[0].description.toUpperCase()} `;
         document.querySelector('.temperature').textContent = `${data.main.temp}°C`;
-    },[])
+    })
     return(
         <div className='details'>
             <div className='content'>
@@ -43,7 +43,7 @@ export default function Details(props){
                         </div>
                         
                         <div className='capital'>
-                        <h3 className="capital__name">{country.capital}</h3>
+                        <h3 className="capital__name">{country[`capital${lang}`]}</h3>
                         <div className="capital__weather">
                         <p className="weatherInfo"></p>
                         <p className="temperature"></p>
