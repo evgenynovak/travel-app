@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Details.scss';
-import countries from './countries';
+import countries from '../countries';
 import ImageGallery from 'react-image-gallery';
 
 
