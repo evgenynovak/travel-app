@@ -3,8 +3,12 @@ import {Link, useHistory, useLocation} from 'react-router-dom';
 import './Header.scss'
 
 function SearchField(props){
-    if(props.main) return (
-        <div className='search'>
+    const classes = ['search'];
+    if(props.length !== 2){
+        classes.push('hide')
+    }
+    return (
+        <div className={classes.join(' ')} >
             <form>
                 <input type='text' placeholder='Search'></input>
                 <input type='submit'></input>
@@ -25,7 +29,7 @@ export default function Header(props){
         <header>
             <div className='content' id='head'>
                 <Link to="/">Главная</Link>
-                <SearchField main={props.main} />
+                <SearchField length={location.length} />
                 <div className="lang">Язык:
                 <select name='language' defaultValue='ru' onChange={event => handleChange(event.target.value)}>
                 <option value='ru' >Русский</option>
