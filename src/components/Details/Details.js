@@ -11,6 +11,7 @@ export default function Details(props){
     });
     const country = currentCountry[0];
     const images = [];
+    const iconClass = ['owf'];
     country.sights.forEach(sight => {
         images.push({
             original : sight.image,
@@ -18,16 +19,33 @@ export default function Details(props){
             description  : `${sight.place}. ${sight.description}`
         });
     })
+    useEffect(async()=>{
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${country.capitalEng}&lang=ru&appid=4ecbcc47cf223a32117b4ef59cbe227c&units=metric`;
+        const res = await fetch(url);
+        const data = await res.json();
+        console.log(data)
+        document.querySelector('.weatherInfo').textContent = `${data.weather[0].description.toUpperCase()} `;
+        document.querySelector('.temperature').textContent = `${data.main.temp}°C`;
+    },[])
     return(
         <div className='details'>
             <div className='content'>
                 <article className="country">
                     <h2 className="country__name">{country.name}</h2>
                     <section class="country__info">{country.info}</section>
-                    <ImageGallery items={images} showThumbnails={false} showBullets={true} />
-                    <aside>
-                    </aside>
+                    <div className='country__media'>
+                        <ImageGallery items={images} showThumbnails={false} showBullets={true} />
+                        <div className='capital'>
+                        <h3 className="capital__name">{country.capital}</h3>
+                        <div className="capital__weather">
+                        <p className="weatherInfo"></p>
+                        <p className="temperature"></p>
+                        </div>
+                </div>
+                    </div>
+                    
                 </article>
+
             </div>
         </div>
     )
