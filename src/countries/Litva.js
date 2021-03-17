@@ -8,8 +8,8 @@ import main from '../assets/image/Litva/Litva0.jpg';
 
 const Litva = {
     name : 'Литва',
-    capital : 'Вильнюс',
-    capitalEng : 'Vilnius',
+    capitalru : 'Вильнюс',
+    capitalen : 'Vilnius',
     prev : main,
     id : 'LT',
     info : "Государство  расположенное в северной части Европы. Имеет выход к Балтийскому морю, расположена на его восточном побережье.",

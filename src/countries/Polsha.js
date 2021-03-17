@@ -8,8 +8,8 @@ import main from '../assets/image/Polsha/Polsha0.jpg';
 
 const Polsha = {
     name : 'Польша',
-    capital : 'Варшава',
-    capitalEng : 'Warsaw',
+    capitalru : 'Варшава',
+    capitalen : 'Warsaw',
     prev : main,
     id : 'PL',
     info : "Страна в Восточной Европе на берегу Балтийского моря, известная своей средневековой архитектурой и еврейскими кварталами.",

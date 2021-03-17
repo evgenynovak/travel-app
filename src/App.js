@@ -1,6 +1,7 @@
 import './App.scss';
 import React, {useState, useEffect} from 'react';
 import {BrowserRouter as Router,
+        Redirect,
         Switch,
         Route,
         Link} from 'react-router-dom';
@@ -17,8 +18,9 @@ export default function App() {
         <div className="App">
           <Header switchLang={setLanguage} main={true} />
           <Switch>
-            <Route path='/details/:id' component={Details} />
-            <Route exact path="/" component={Main} />
+            <Route path='/details/:leng/:id' component={Details} />
+            <Route path="/:lang" component={Main} />
+            <Redirect from="/" to="/ru" />
           </Switch>
           <Footer />
         </div>

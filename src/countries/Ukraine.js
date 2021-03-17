@@ -8,8 +8,8 @@ import main from '../assets/image/Ukraine/Ukraine0.jpg';
 
 const Ukraine = {
     name : 'Украина',
-    capital : "Киев",
-    capitalEng : 'Kyiv',
+    capitalru : "Киев",
+    capitalen : 'Kyiv',
     id : 'UA',
     prev : main,
     info : 'Украина – это большая страна в Восточной Европе, известная православными церквями, черноморскими курортами и лесистыми горами.',

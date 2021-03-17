@@ -9,8 +9,8 @@ import main from '../assets/image/Estonia/Estonia0.jpg';
 
 const Estonia = {
     name : 'Эстония',
-    capital : 'Таллин',
-    capitalEng : 'Tallinn',
+    capitalru : 'Таллин',
+    capitalen : 'Tallinn',
     prev : main,
     id : 'EE',
     info : "Государство, расположенное в Северной Европе на восточном побережье Балтийского моря, омываемое водами Финского и Рижского заливов.",

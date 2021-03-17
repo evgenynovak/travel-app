@@ -9,8 +9,8 @@ import main from '../assets/image/Latvia/Latvia0.jpg';
 
 const Latvia = {
     name : 'Латвия',
-    capital : 'Рига',
-    capitalEng : 'Riga',
+    capitalru : 'Рига',
+    capitalen : 'Riga',
     prev : main,
     id : 'LV',
     info : "Государство  расположенное в Северной Европе. Экономика ориентирована на логистику, банковское обслуживание, туризм, пищевую промышленность.",

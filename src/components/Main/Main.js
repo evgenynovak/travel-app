@@ -1,9 +1,10 @@
 import React, {useEffect} from 'react';
 import countries from '../countries';
-import {Link} from 'react-router-dom';
+import {Link, useParams} from 'react-router-dom';
 import './Main.scss'
 
 export default function Main(props){
+  let { lang } = useParams();
 
     // useEffect(() => {
     //     document.querySelector('.gallery').addEventListener('click', (event)=>{
@@ -23,11 +24,11 @@ export default function Main(props){
                 <div className='gallery'>
                     { countries.map((country, index) => {
                         return (
-                            <Link key={index} to={`/details/:${country.id}`}>
+                            <Link key={index} to={`/details/${lang}/:${country.id}`}>
                             <div id={country.id} className="gallery__card card">
                                 <img src={country.prev} alt={country.name} className="card__image" />
                                 <h4 className="card__title">{country.name}</h4>
-                                <p className="card__info">{country.capital}</p>
+                                <p className="card__info">{country[`capital${lang}`]}</p>
                             </div>
                             </Link>
                         )
