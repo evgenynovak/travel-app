@@ -12,7 +12,7 @@ const Polsha = {
     namede : 'Polen',
     capitalru : 'Варшава',
     capitalen : 'Warsaw',
-    capitalen : 'Warschau',
+    capitalde : 'Warschau',
     prev : main,
     preview : "https://www.youtube.com/embed/mSNqPwd38zY",
     id : 'PL',

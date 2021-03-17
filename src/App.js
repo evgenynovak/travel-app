@@ -14,7 +14,7 @@ var id;
 export default function App() {
   const [language, setLanguage] = useState('ru');
   return (
-    <Router>
+    <Router basename='travel-app'>
         <div className="App">
           <Header switchLang={setLanguage} main={true} />
           <Switch>
