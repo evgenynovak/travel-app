@@ -12,6 +12,7 @@ const Latvia = {
     capital : 'Рига',
     capitalEng : 'Riga',
     prev : main,
+    preview : "https://www.youtube.com/embed/-3OObhE-yaU",
     id : 'LV',
     info : "Государство  расположенное в Северной Европе. Экономика ориентирована на логистику, банковское обслуживание, туризм, пищевую промышленность.",
     sights : [{

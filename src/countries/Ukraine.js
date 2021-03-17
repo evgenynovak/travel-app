@@ -12,6 +12,7 @@ const Ukraine = {
     capitalEng : 'Kyiv',
     id : 'UA',
     prev : main,
+    preview : "https://www.youtube.com/embed/l-8vRH0W88g",
     info : 'Украина – это большая страна в Восточной Европе, известная православными церквями, черноморскими курортами и лесистыми горами.',
     sights : [{
         place : 'Киево-Печерская лавра',

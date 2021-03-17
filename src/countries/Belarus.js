@@ -4,13 +4,14 @@ import mir from '../assets/image/Belarus/Belarus3.jpg';
 import minsk from '../assets/image/Belarus/Belarus4.jpg';
 import polotsk from '../assets/image/Belarus/Belarus5.jpg';
 import hatin from '../assets/image/Belarus/Belarus6.jpg';
-import main from '../assets/image/Belarus/Belarus0.jpg'
+import main from '../assets/image/Belarus/Belarus0.jpg';
 
 const Belarus = {
     name : "Беларусь",
     capital : 'Минск',
     capitalEng : 'Minsk',
     prev : main,
+    preview : 'https://www.youtube.com/embed/QNdYybI3Pgs',
     id : 'BY',
     info : "Государство в Восточной Европе. Территория — 207 595 км². Государственными языками являются белорусский и русский.",
     sights : [{
