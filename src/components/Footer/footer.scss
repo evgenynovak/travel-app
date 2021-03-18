@@ -1,0 +1,36 @@
+footer{
+    ul{
+        list-style-type: none;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:visited{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    margin-top: 20px;
+    .content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 1200px;
+        background-color: #00000018;
+        p{
+            font-weight: bold;
+            font-size: 22px;
+        }
+    }
+    .logo{
+        a{
+            display: block;
+            width: 150px;
+        }
+        img{
+            display: block;
+
+        }
+    }
+}

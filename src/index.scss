@@ -1,0 +1,13 @@
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+  font-family: 'Open Sans', sans-serif;
+}
+#root{
+  width: 100%;
+}

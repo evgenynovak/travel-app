@@ -1,0 +1,67 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+
+.content{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+}
+.country{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.country__name{
+    text-align: center;
+}
+.country__info{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.country__media{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+.image-gallery{
+    width: 600px;
+    height: 450px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.video{
+    margin: 0 auto;
+}
+.capital{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    .capital__name{
+        margin: 0 auto;
+    }
+
+}
+.capital__weather{
+    margin: 30px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #3b3434;
+    color: #170735;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .weatherInfo{
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    }
+    .temperature{
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 18px;
+    }
+}

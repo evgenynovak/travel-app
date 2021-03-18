@@ -1,0 +1,19 @@
+
+#head{
+    width: 1200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00000018;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+a, a:visited, .lang {
+    text-decoration: none;
+    color: #1f2877;
+}
+.hide{
+    display: none;
+}
